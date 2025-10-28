@@ -1,0 +1,82 @@
+Day-12
+======================
+Multidimensional Array or Two dimensional Array
+------------------------------------------------
+Two dimensional array declaration
+========================================
+int[][] a; //it is recommended
+int [][]a;
+int a[][];
+int[] []a;
+int[] a[];
+int []a[];
+
+
+Three-dimensional array declaration
+========================================
+int[][][] a;
+int [][][]a;
+int a[][][];
+int[][] a[];
+int[] [][]a;
+int[][] []a;
+
+which of the following declarations are valid.
+==================================================
+step-1: int[] a1,b1; // valid.a1[],b1[]
+step-2: int[] a2[],b2;//a2-2,b2-1
+step-3:int[] []a3,b3;//a3-2,b3-2
+step-4:int[] a4,[]b4;//invalid.
+
+note
+-----
+if we want to specify the dimension before the variable ,but that rule is applicable only for the first variable.second variable onwards we can't apply the declaration.
+
+
+
+multi-dimensional array creation
+=================================
+In java multi-dimensional arrays are implementesd as arrays of arrays approach but not in matrix form.the main advantage of this approach is improve memory utilization.
+
+int[][] a=new int[2][];
+a[0]=new int[3];
+a[1]=new int[2]; 
+
+multidimensional array initialization
+=========================================
+
+declaration,construction and initialization single line through multi dimensional arrays 
+int[][] a;
+a=new int[2][3];
+a[0][0]=10;
+a[0][1]=20;==============>int[][]=a{{10,20,30},{70,80,90}};
+a[0][2]=30;
+a[1][0]=70;
+a[1][1]=80;
+
+=========================
+three dimensional 
+================
+int[][][] a={{{10,20,30},{{60},{70,80},{90,100,110}}};
+System.out.println(a[0][1][1]);
+System.out.println(a[1][0][2]);
+System.out.println(a[1][2][1]);
+System.out.println(a[1][2][2]);
+System.out.println(a[2][1][0]);                                                                
+System.out.println(a[1][1][1]);                    
+
+Assignment
+----------
+//read and print a 2d array
+//sum of all elements in 2d array.
+//3.row-wise sum in 2d array
+//column wise sum in 2d array
+transpose of a matrix :=switch rows with columns.
+//multiply row matrices
+//add two matrices
+//row-wise and column-wise product
+
+https://tinyurl.com/JFS44-Java-Notes
+
+
+
